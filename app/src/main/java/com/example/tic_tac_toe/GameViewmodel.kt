@@ -11,10 +11,14 @@ class GameViewmodel: ViewModel() {
     fun setButton(){
         _state.value = when (state.value.isXTurn) {
             true -> _state.value.copy(button1 = " X")
+
             false -> _state.value.copy(button2 = "O/ Blank")
 
-
         }
+         _state.value = _state.value.copy(isXTurn =!state.value.isXTurn )
+
+
+
     }
 }
 

@@ -41,77 +41,101 @@ fun TictactoeScreen(
             style = MaterialTheme.typography.headlineMedium,
 
             )
-    }
 
-    Row(
-        horizontalArrangement = Arrangement.SpaceEvenly,
-        verticalAlignment = Alignment.CenterVertically,
-        modifier = modifier.fillMaxWidth()
-    ) {
-        Button(onClick = {
-            viewModel.setButton()
-        }) {
-            Text(
-                text = "X/O/Blank",
-            )
-        }
-        Button(onClick = {
-            viewModel.setButton()
-        }) {
-            Text(
-                text = "X/O/Blank",
 
-                )
+        Row(
+            horizontalArrangement = Arrangement.SpaceEvenly,
+            verticalAlignment = Alignment.CenterVertically,
+            modifier = modifier.fillMaxWidth()
+        ) {
 
             Button(onClick = {
                 viewModel.setButton()
             }) {
                 Text(
-                    text = "X/O/Blank",
-
-                    )
-
+                    text = state.button1,
+                )
+            }
+            Button(onClick = {
+                viewModel.setButton()
+            }) {
+                Text(
+                    text = state.button2,
+                )
+            }
+            Button(onClick = {
+                viewModel.setButton()
+            }) {
+                Text(
+                    text = state.button3,
+                )
+            }
+        }
+            Row(
+                horizontalArrangement = Arrangement.SpaceEvenly,
+                verticalAlignment = Alignment.CenterVertically,
+                modifier = modifier.fillMaxWidth()
+            ) {
                 Button(onClick = {
                     viewModel.setButton()
                 }) {
                     Text(
-                        text = "X/O/Blank",
-
-                        )
-                    Button(onClick = {
-                        viewModel.setButton()
-                    }) {
-                        Text(
-                            text = "X/O/Blank",
-                        )
-                        Button(onClick = {
-                            viewModel.setButton()
-                        }) {
-                            Text(
-                                text = "X/O/Blank",
-
-                                )
-                            Button(onClick = {
-                                viewModel.setButton()
-                            }) {
-                                Text(
-                                    text = "X/O/Blank",
-                                )
-                                Button(onClick = {
-                                    viewModel.setButton()
-                                }) {
-                                    Text(
-                                        text = "X/O/Blank",
-                                    )
-                                }
-                            }
-                        }
-                    }
+                        text = state.button1,
+                    )
+                }
+                Button(onClick = {
+                    viewModel.setButton()
+                }) {
+                    Text(
+                        text = state.button2,
+                    )
+                }
+                Button(onClick = {
+                    viewModel.setButton()
+                }) {
+                    Text(
+                        text = state.button3,
+                    )
+                }
+            }
+            Row(
+                horizontalArrangement = Arrangement.SpaceEvenly,
+                verticalAlignment = Alignment.CenterVertically,
+                modifier = modifier.fillMaxWidth()
+            ) {
+                Button(onClick = {
+                    viewModel.setButton()
+                }) {
+                    Text(
+                        text = state.button1,
+                    )
+                }
+                Button(onClick = {
+                    viewModel.setButton()
+                }) {
+                    Text(
+                        text = state.button2,
+                    )
+                }
+                Button(onClick = {
+                    viewModel.setButton()
+                }) {
+                    Text(
+                        text = state.button3,
+                    )
                 }
             }
         }
     }
-}
+
+
+
+
+
+
+
+
+
 @Preview(showBackground = true)
 @Composable
 fun TictactoePreview() {
