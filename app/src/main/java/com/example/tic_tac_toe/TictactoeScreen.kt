@@ -108,7 +108,7 @@ fun TictactoeScreen(
                 }) {
                     Text(
                         text = state.button7,
-                }
+                    ) }
                 Button(onClick = {
                     viewModel.setButton()
                 }) {
