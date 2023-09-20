@@ -80,21 +80,21 @@ fun TictactoeScreen(
                     viewModel.setButton()
                 }) {
                     Text(
-                        text = state.button1,
+                        text = state.button4,
                     )
                 }
                 Button(onClick = {
                     viewModel.setButton()
                 }) {
                     Text(
-                        text = state.button2,
+                        text = state.button5,
                     )
                 }
                 Button(onClick = {
                     viewModel.setButton()
                 }) {
                     Text(
-                        text = state.button3,
+                        text = state.button6,
                     )
                 }
             }
@@ -107,21 +107,20 @@ fun TictactoeScreen(
                     viewModel.setButton()
                 }) {
                     Text(
-                        text = state.button1,
+                        text = state.button7,
+                }
+                Button(onClick = {
+                    viewModel.setButton()
+                }) {
+                    Text(
+                        text = state.button8,
                     )
                 }
                 Button(onClick = {
                     viewModel.setButton()
                 }) {
                     Text(
-                        text = state.button2,
-                    )
-                }
-                Button(onClick = {
-                    viewModel.setButton()
-                }) {
-                    Text(
-                        text = state.button3,
+                        text = state.button9,
                     )
                 }
             }
