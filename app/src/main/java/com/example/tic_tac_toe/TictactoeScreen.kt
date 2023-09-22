@@ -51,6 +51,7 @@ fun TictactoeScreen(
 
             Button(onClick = {
                 viewModel.setButton()
+
             }) {
                 Text(
                     text = state.button1,
@@ -69,6 +70,7 @@ fun TictactoeScreen(
                 Text(
                     text = state.button3,
                 )
+
             }
         }
             Row(

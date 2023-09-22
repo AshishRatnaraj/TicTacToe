@@ -1,5 +1,6 @@
 package com.example.tic_tac_toe
 
+import android.widget.Button
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
@@ -8,19 +9,18 @@ class GameViewmodel: ViewModel() {
     private val _state = mutableStateOf(GameState())
     val state: State<GameState> = _state
 
-    fun setButton(){
-        _state.value = when (state.value.isXTurn) {
-            true -> _state.value.copy(button1 = " X")
-
-            false -> _state.value.copy(button2 = "O/ Blank")
-
-        }
-         _state.value = _state.value.copy(isXTurn =!state.value.isXTurn )
-
-
-
-    }
+    fun setButton(value:Int, buttonId:Int ){
+            val buttonText = when (value){
+        0 -> " "
+        1 -> "X"
+        2 -> "O"
+        else -> " "
+    }22
+        button.text = buttonText
 }
+
+}
+
 
 
 
