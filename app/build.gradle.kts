@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.tic_tac_toe"
-        minSdk = 32
+        minSdk = 29
         targetSdk = 33
         versionCode = 1
         versionName = "1.0"
@@ -25,7 +25,8 @@ android {
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
+                "progu" +
+                        "ard-rules.pro"
             )
         }
     }

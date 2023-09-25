@@ -17,6 +17,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.lifecycle.viewmodel.viewModelFactory
 import com.example.tic_tac_toe.ui.theme.TictactoeTheme
 
 @Composable
@@ -50,25 +51,25 @@ fun TictactoeScreen(
         ) {
 
             Button(onClick = {
-                viewModel.setButton()
+                viewModel.setButton(0)
 
             }) {
                 Text(
-                    text = state.button1,
+                    text = state.button[0],
                 )
             }
             Button(onClick = {
-                viewModel.setButton()
+                viewModel.setButton(1)
             }) {
                 Text(
-                    text = state.button2,
+                    text = state.button[1],
                 )
             }
             Button(onClick = {
-                viewModel.setButton()
+                viewModel.setButton(2)
             }) {
                 Text(
-                    text = state.button3,
+                    text = state.button[2],
                 )
 
             }
@@ -79,24 +80,24 @@ fun TictactoeScreen(
                 modifier = modifier.fillMaxWidth()
             ) {
                 Button(onClick = {
-                    viewModel.setButton()
+                    viewModel.setButton(3)
                 }) {
                     Text(
-                        text = state.button4,
+                        text = state.button[3]
                     )
                 }
                 Button(onClick = {
-                    viewModel.setButton()
+                    viewModel.setButton(4)
                 }) {
                     Text(
-                        text = state.button5,
+                        text = state.button[4]
                     )
                 }
                 Button(onClick = {
-                    viewModel.setButton()
+                    viewModel.setButton(5)
                 }) {
                     Text(
-                        text = state.button6,
+                        text = state.button[5],
                     )
                 }
             }
@@ -106,30 +107,28 @@ fun TictactoeScreen(
                 modifier = modifier.fillMaxWidth()
             ) {
                 Button(onClick = {
-                    viewModel.setButton()
+                    viewModel.setButton(6)
                 }) {
                     Text(
-                        text = state.button7,
+                        text = state.button[6],
                     ) }
                 Button(onClick = {
-                    viewModel.setButton()
+                    viewModel.setButton(7)
                 }) {
                     Text(
-                        text = state.button8,
+                        text = state.button[7],
                     )
                 }
                 Button(onClick = {
-                    viewModel.setButton()
+                    viewModel.setButton(8)
                 }) {
                     Text(
-                        text = state.button9,
+                        text = state.button[8],
                     )
                 }
             }
         }
     }
-
-
 
 
 
