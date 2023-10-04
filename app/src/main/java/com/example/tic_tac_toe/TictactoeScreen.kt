@@ -74,62 +74,72 @@ fun TictactoeScreen(
 
             }
         }
-            Row(
-                horizontalArrangement = Arrangement.SpaceEvenly,
-                verticalAlignment = Alignment.CenterVertically,
-                modifier = modifier.fillMaxWidth()
-            ) {
-                Button(onClick = {
-                    viewModel.setButton(3)
-                }) {
-                    Text(
-                        text = state.button[3]
-                    )
-                }
-                Button(onClick = {
-                    viewModel.setButton(4)
-                }) {
-                    Text(
-                        text = state.button[4]
-                    )
-                }
-                Button(onClick = {
-                    viewModel.setButton(5)
-                }) {
-                    Text(
-                        text = state.button[5],
-                    )
-                }
+        Row(
+            horizontalArrangement = Arrangement.SpaceEvenly,
+            verticalAlignment = Alignment.CenterVertically,
+            modifier = modifier.fillMaxWidth()
+        ) {
+            Button(onClick = {
+                viewModel.setButton(3)
+            }) {
+                Text(
+                    text = state.button[3]
+                )
             }
-            Row(
-                horizontalArrangement = Arrangement.SpaceEvenly,
-                verticalAlignment = Alignment.CenterVertically,
-                modifier = modifier.fillMaxWidth()
-            ) {
-                Button(onClick = {
-                    viewModel.setButton(6)
-                }) {
-                    Text(
-                        text = state.button[6],
-                    ) }
-                Button(onClick = {
-                    viewModel.setButton(7)
-                }) {
-                    Text(
-                        text = state.button[7],
-                    )
-                }
-                Button(onClick = {
-                    viewModel.setButton(8)
-                }) {
-                    Text(
-                        text = state.button[8],
-                    )
-                }
+            Button(onClick = {
+                viewModel.setButton(4)
+            }) {
+                Text(
+                    text = state.button[4]
+                )
+            }
+            Button(onClick = {
+                viewModel.setButton(5)
+            }) {
+                Text(
+                    text = state.button[5],
+                )
+            }
+        }
+        Row(
+            horizontalArrangement = Arrangement.SpaceEvenly,
+            verticalAlignment = Alignment.CenterVertically,
+            modifier = modifier.fillMaxWidth()
+        ) {
+            Button(onClick = {
+                viewModel.setButton(6)
+            }) {
+                Text(
+                    text = state.button[6],
+                )
+            }
+            Button(onClick = {
+                viewModel.setButton(7)
+            }) {
+                Text(
+                    text = state.button[7],
+                )
+            }
+            Button(onClick = {
+                viewModel.setButton(8)
+            }) {
+                Text(
+                    text = state.button[8],
+                )
+
+            }
+        }
+        Row {
+            Button(onClick = {
+                viewModel.resetGame()
+            }) {
+                Text(
+                    text = "resetGame",
+                )
             }
         }
     }
-
+}
 
 
 
